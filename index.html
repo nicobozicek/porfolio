@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0f14">
+  <meta name="description" content="Portfolio personal de Nicolás Bozicek, estudiante de programación y desarrollador C# y .NET.">
+  <title>Nicolás Bozicek | Desarrollador</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navegación principal: el checkbox permite abrir el menú móvil sin JavaScript. -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Nombre Apellido, ir al inicio">Nombre Apellido<span>.</span></a>
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Abrir o cerrar menú">
+      <label class="menu-button" for="menu-toggle" aria-label="Abrir o cerrar menú"><span></span><span></span><span></span></label>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li><li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#conocimientos">Conocimientos</a></li><li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#redes">Redes</a></li><li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Presentación -->
+    <section class="hero section" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Portfolio personal</p>
+          <h1 id="hero-title">Hola, soy <span class="accent-text">Nicolás Bozicek</span></h1>
+          <p class="hero-role">Desarrollador C#<br>Desarrollador Front &amp; Backend .NET</p>
+          <p class="hero-intro">Estudiante de programación, dando mis primeros pasos en el mundo de IT.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#proyectos">Ver proyectos <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="https://drive.google.com/file/d/170sw8pEXJ55dLRiLPgK4x9iussbeZpQa/view?usp=drive_link" download>Descargar CV <span aria-hidden="true">↓</span></a></div>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait-frame"><img src="img/foto-perfil.jpg" alt="Foto de perfil de Nicolás Bozicek" class="portrait"></div>
+          <span class="frame-mark mark-top" aria-hidden="true"></span><span class="frame-mark mark-bottom" aria-hidden="true"></span>
+          <span class="portrait-caption">Nicolás Bozicek <span>· Desarrollador</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Información personal -->
+    <section class="section section-muted" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">01 / Perfil</p><h2 id="about-title">Sobre <span class="accent-text">mí</span></h2></div>
+        <div class="about-grid">
+          <div class="about-copy"><p>Soy de Sáenz Peña, provincia del Chaco. Estoy cursando el 2.º año de la Tecnicatura Universitaria en Programación en la UTN Facultad Regional General Pacheco. Además, soy Técnico en Gestión y Administración de las Organizaciones y actualmente trabajo como administrativo en un supermercado.</p>
+            <div class="timeline"><p class="eyebrow">Experiencia</p><div class="timeline-item"><span class="timeline-dot" aria-hidden="true"></span><div><strong>Administrativo</strong><p>Cadena de supermercados</p><span class="muted-text">2020 — 2026</span></div></div></div>
+          </div>
+          <dl class="facts-grid">
+            <div class="fact-card"><dt>Ubicación</dt><dd>Sáenz Peña · Chaco</dd></div>
+            <div class="fact-card"><dt>Idiomas</dt><dd>Inglés <span class="muted-text">(básico)</span></dd></div>
+            <div class="fact-card fact-wide"><dt>Educación</dt><dd>Técnico en Gestión y Administración de las Organizaciones.<br>Estudiante de la Tecnicatura Universitaria en Programación, UTN FRGP.</dd></div>
+            <div class="fact-card fact-wide"><dt>Experiencia actual</dt><dd>Administrativo en una cadena de supermercados</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conocimientos: etiquetas sin porcentajes -->
+    <section class="section" id="conocimientos" aria-labelledby="skills-title">
+      <div class="container"><div class="section-heading"><p class="eyebrow">02 / Herramientas</p><h2 id="skills-title">Conoci<span class="accent-text">mientos</span></h2></div>
+        <div class="skills-grid">
+          <article class="skill-group"><span class="skill-index">01</span><h3>Lenguajes</h3><ul class="tag-list"><li>C#</li><li>C++</li></ul></article>
+          <article class="skill-group"><span class="skill-index">02</span><h3>Desarrollo web</h3><ul class="tag-list"><li>HTML</li><li>CSS</li></ul></article>
+          <article class="skill-group"><span class="skill-index">03</span><h3>Frameworks</h3><ul class="tag-list"><li>.NET</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos destacados -->
+    <section class="section section-muted" id="proyectos" aria-labelledby="projects-title">
+      <div class="container"><div class="section-heading"><p class="eyebrow">03 / Trabajo seleccionado</p><h2 id="projects-title">Mis <span class="accent-text">proyectos</span></h2><p class="section-lead">Prácticas y proyectos desarrollados durante mi formación.</p></div>
+        <div class="projects-grid">
+          <article class="project-card project-featured"><div class="project-image project-image-one"><img src="img/proyecto-gestion.jpg" alt="Vista previa del sistema de gestión" loading="lazy"><span class="project-number">01</span></div><div class="project-body"><p class="project-kicker">Aplicación de escritorio · C++</p><h3>Sistema de Gestión</h3><p>Desarrollado en C++ como proyecto de gestión.</p><dl class="project-meta"><div><dt>Género</dt><dd>Gestión</dd></div><div><dt>Tecnología</dt><dd>C++</dd></div><div><dt>Contexto</dt><dd>Formación</dd></div><div><dt>Rol</dt><dd>Desarrollador</dd></div></dl><a class="text-link" href="https://github.com/nicobozicek/Sistema-de-gestion" target="_blank" rel="noopener noreferrer">Ver en GitHub <span aria-hidden="true">↗</span></a></div></article>
+          <article class="project-card project-featured"><div class="project-image project-image-two"><img src="img/juego-dados.jpg" alt="Vista previa del juego de dados" loading="lazy"><span class="project-number">02</span></div><div class="project-body"><p class="project-kicker">Juego · C++</p><h3>Juego en C++</h3><p>Juego de dados desarrollado como práctica de programación.</p><dl class="project-meta"><div><dt>Género</dt><dd>Juego</dd></div><div><dt>Tecnología</dt><dd>C++</dd></div><div><dt>Contexto</dt><dd>Práctica</dd></div><div><dt>Rol</dt><dd>Desarrollador</dd></div></dl><a class="text-link" href="https://github.com/nicobozicek/enfrendados" target="_blank" rel="noopener noreferrer">Ver en GitHub <span aria-hidden="true">↗</span></a></div></article>
+          <article class="project-card project-featured"><div class="project-image project-image-three"><img src="img/juego-mario.jpg" alt="Vista previa del juego inspirado en Mario Bros" loading="lazy"><span class="project-number">03</span></div><div class="project-body"><p class="project-kicker">Juego · C++</p><h3>Juego inspirado en Mario Bros</h3><p>Copia de un juego de Mario Bros realizada en C++.</p><dl class="project-meta"><div><dt>Género</dt><dd>Plataformas</dd></div><div><dt>Tecnología</dt><dd>C++</dd></div><div><dt>Contexto</dt><dd>Formación</dd></div><div><dt>Rol</dt><dd>Desarrollador</dd></div></dl><a class="text-link" href="https://github.com/nicobozicek/mario" target="_blank" rel="noopener noreferrer">Ver en GitHub <span aria-hidden="true">↗</span></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Redes y vías de contacto -->
+    <section class="section" id="redes" aria-labelledby="social-title"><div class="container"><div class="section-heading"><p class="eyebrow">04 / En línea</p><h2 id="social-title">Conectemos<span class="accent-text">.</span></h2></div>
+      <div class="social-grid">
+        <a class="social-card" href="https://www.linkedin.com/in/nicol%C3%A1s-bozicek-7b5bb2174/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Nicolás Bozicek (abre en pestaña nueva)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3.5a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4ZM3.4 9.5H7v11H3.4v-11Zm5.8 0h3.4V11h.1a3.8 3.8 0 0 1 3.4-1.8c3.6 0 4.3 2.3 4.3 5.3v6h-3.6v-5.3c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9v5.4H9.2v-11Z"/></svg><span>LinkedIn</span><span class="social-arrow">↗</span></a>
+        <a class="social-card" href="https://github.com/nicobozicek" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Nicolás Bozicek (abre en pestaña nueva)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.2-5.2-5.5 0-1.2.4-2.1 1.1-2.9-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3 1.1a10.5 10.5 0 0 1 5.5 0c2.1-1.4 3-1.1 3-1.1.6 1.5.2 2.6.1 2.9.7.8 1.1 1.7 1.1 2.9 0 4.3-2.6 5.2-5.2 5.5.4.3.8 1 .8 2v3.3c0 .3.2.7.8.6A11.1 11.1 0 0 0 12 .9Z"/></svg><span>GitHub</span><span class="social-arrow">↗</span></a>
+        <a class="social-card" href="mailto:boziceknicolas@gmail.com" aria-label="Enviar email a Nicolás Bozicek"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7.1L4.7 7h14.6L12 12.1Zm-8 5.9V9l8 5.5L20 9v9H4Z"/></svg><span>Email</span><span class="social-arrow">↗</span></a>
+        <a class="social-card" href="https://wa.me/+543644351992" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp (abre en pestaña nueva)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.8 9.8 0 0 0-8.4 14.8L2.3 22l5.3-1.4A9.9 9.9 0 1 0 12 2Zm0 17.8a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 19.8Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.8c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7 7 0 0 1-1.3-1.6c-.1-.2 0-.4.1-.5l.4-.4.2-.4v-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4H9c-.2 0-.4.1-.6.3-.6.6-.9 1.4-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 2 3.1 4.9 4.2 1.8.8 2.5.8 3.4.6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.4-.3Z"/></svg><span>WhatsApp</span><span class="social-arrow">↗</span></a>
+      </div></div></section>
+
+    <!-- Formulario estático procesado por Formspree -->
+    <section class="section section-muted" id="contacto" aria-labelledby="contact-title"><div class="container contact-grid"><div class="section-heading"><p class="eyebrow">05 / Hablemos</p><h2 id="contact-title">Contacto<span class="accent-text">.</span></h2><p class="section-lead">¿Tenés una propuesta o querés conversar? Escribime.</p><a class="contact-email" href="mailto:boziceknicolas@gmail.com">boziceknicolas@gmail.com <span aria-hidden="true">↗</span></a></div>
+      <form class="contact-form" action="https://formspree.io/f/TU_ID" method="POST">
+        <div class="form-row"><div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" autocomplete="name" required></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div></div>
+        <div class="field"><label for="asunto">Asunto</label><input id="asunto" name="asunto" type="text" required></div>
+        <div class="field"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5" required></textarea></div>
+        <button class="button button-primary submit-button" type="submit">Enviar <span aria-hidden="true">↗</span></button>
+      </form></div></section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#inicio">Nombre Apellido<span>.</span></a><p>© 2026 Nombre y Apellido <span class="footer-spark" aria-hidden="true">✳</span></p><a class="back-top" href="#inicio">Volver arriba ↑</a></div></footer>
+</body>
+</html>
